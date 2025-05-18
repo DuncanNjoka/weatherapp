@@ -1,0 +1,41 @@
+name: Next.js Frontend CI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'weather-app-frontend/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'weather-app-frontend/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+        cache: 'npm'
+        cache-dependency-path: weather-app-frontend/package-lock.json
+
+    - name: Install Dependencies
+      working-directory: ./weather-app-frontend
+      run: npm ci
+
+    - name: Run Linting
+      working-directory: ./weather-app-frontend
+      run: npm run lint
+
+    - name: Run Tests
+      working-directory: ./weather-app-frontend
+      run: npm test
+
+    - name: Build
+      working-directory: ./weather-app-frontend
+      run: npm run build 
