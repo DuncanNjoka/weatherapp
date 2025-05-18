@@ -1,0 +1,74 @@
+# Next.js
+weather-app-frontend/.next/
+weather-app-frontend/out/
+weather-app-frontend/node_modules/
+weather-app-frontend/.env.local
+weather-app-frontend/.env.development.local
+weather-app-frontend/.env.test.local
+weather-app-frontend/.env.production.local
+weather-app-frontend/npm-debug.log*
+weather-app-frontend/yarn-debug.log*
+weather-app-frontend/yarn-error.log*
+
+# Laravel
+weather-app-backend/vendor/
+weather-app-backend/node_modules/
+weather-app-backend/.env
+weather-app-backend/.env.backup
+weather-app-backend/.phpunit.result.cache
+weather-app-backend/Homestead.json
+weather-app-backend/Homestead.yaml
+weather-app-backend/npm-debug.log
+weather-app-backend/yarn-error.log
+weather-app-backend/storage/*.key
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs
+*.log
+logs/
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.override.yml.dist
+docker-compose.override.yaml.dist 
